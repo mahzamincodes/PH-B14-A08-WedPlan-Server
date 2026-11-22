@@ -1,6 +1,4 @@
 
-11
-12
 
 # WedPlan — Wedding Planning Platform (Server)
 
