@@ -1,5 +1,3 @@
-
-
 # WedPlan — Wedding Planning Platform (Server)
 
 WedPlan is the backend application of a full-stack wedding planning platform. It provides secure APIs for customers, vendors, and admins to manage wedding services, booking requests, subscriptions, and platform transactions.

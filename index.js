@@ -234,7 +234,7 @@ app.use("/api/subscriptions", subscriptionRoutes);
 
 // Health check
 app.get("/", (req, res) => {
-    res.send("Wedplan server is running on localhost:5000");
+    res.send("Wedplan server is running");
 });
 
 // Handle unknown routes
@@ -259,9 +259,12 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`Wedplan server is running on port ${PORT}`);
-});
+// Start server locally only
+if (process.env.NODE_ENV !== "production") {
+    app.listen(PORT, () => {
+        console.log(`Wedplan server is running on port ${PORT}`);
+    });
+}
 
 export { client, db };
+export default app;
