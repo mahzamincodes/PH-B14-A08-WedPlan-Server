@@ -4,10 +4,16 @@ WedPlan is the backend application of a full-stack wedding planning platform. It
 
 The server is built with Express.js and MongoDB, with JWT-based authentication and role-based authorization to protect application resources.
 
+## Live Deployment
+
+- **Live Server:** [WedPlan Server](https://ph-b14-a08-wed-plan-server.vercel.app/)
+- **Services API:** [View Services API](https://ph-b14-a08-wed-plan-server.vercel.app/api/services)
+- **Live Client:** [WedPlan Website](https://ph-b14-a08-wed-plan-client.vercel.app/)
+
 ## Project Repositories
 
-- **Client Repository:** [GitHub Repository]
-- **Server Repository:** [GitHub Repository]
+- **Client Repository:** [GitHub Repository](https://github.com/mahzamincodes/PH-B14-A08-WedPlan-Client)
+- **Server Repository:** [GitHub Repository](https://github.com/mahzamincodes/PH-B14-A08-WedPlan-Server)
 
 ## Key Features
 
@@ -97,19 +103,19 @@ The server is built with Express.js and MongoDB, with JWT-based authentication a
 
 ### 1. Clone the Server Repository
 
-```bash id="m2r6e7"
-git clone YOUR_SERVER_GITHUB_REPOSITORY_URL
+```bash
+git clone https://github.com/mahzamincodes/PH-B14-A08-WedPlan-Server.git
 ```
 
 ### 2. Navigate to the Project Directory
 
-```bash id="0f3v9z"
-cd wedplan-server
+```bash
+cd PH-B14-A08-WedPlan-Server
 ```
 
 ### 3. Install Dependencies
 
-```bash id="x8s4e1"
+```bash
 npm install
 ```
 
@@ -117,21 +123,21 @@ npm install
 
 Create a `.env` file in the server project root and configure the following variables:
 
-```env id="c5x2j8"
-DB_USER=wedplan
-DB_PASSWORD=YOUR_MONGODB_PASSWORD
+```env
+DB_USER=
+DB_PASSWORD=
 
-JWT_SECRET=YOUR_JWT_SECRET
-JWT_ISSUER=wedplan-client
-JWT_AUDIENCE=wedplan-server
+JWT_SECRET=
+JWT_ISSUER=
+JWT_AUDIENCE=
 
 CLIENT_ORIGIN=http://localhost:3000
 
-IMGBB_API_KEY=YOUR_IMGBB_API_KEY
+IMGBB_API_KEY=
 
-STRIPE_SECRET_KEY=YOUR_STRIPE_SECRET_KEY
-STRIPE_PREMIUM_PRICE_ID=YOUR_STRIPE_PREMIUM_PRICE_ID
-STRIPE_WEBHOOK_SECRET=YOUR_STRIPE_WEBHOOK_SECRET
+STRIPE_SECRET_KEY=
+STRIPE_PREMIUM_PRICE_ID=
+STRIPE_WEBHOOK_SECRET=
 ```
 
 **Important:**
@@ -143,13 +149,13 @@ STRIPE_WEBHOOK_SECRET=YOUR_STRIPE_WEBHOOK_SECRET
 
 ### 5. Run the Development Server
 
-```bash id="j7w5n3"
+```bash
 npm run dev
 ```
 
 If the project does not define a development script, start the server using:
 
-```bash id="t3q9p6"
+```bash
 node index.js
 ```
 
@@ -159,15 +165,15 @@ The server runs on the port configured in the application.
 
 The backend provides APIs for the following application modules:
 
-| Module         | Purpose                                         |
-| -------------- | ----------------------------------------------- |
-| Authentication | JWT verification and authorization              |
-| Users          | User management and profile operations          |
-| Services       | Service creation, listing, updating, and review |
-| Bookings       | Booking requests and status management          |
-| Subscriptions  | Premium subscription management                 |
-| Transactions   | Payment transaction records                     |
-| Webhooks       | Verified Stripe payment event handling          |
+| Module | Purpose |
+|---|---|
+| Authentication | JWT verification and authorization |
+| Users | User management and profile operations |
+| Services | Service creation, listing, updating, and review |
+| Bookings | Booking requests and status management |
+| Subscriptions | Premium subscription management |
+| Transactions | Payment transaction records |
+| Webhooks | Verified Stripe payment event handling |
 
 ## Database Structure
 
@@ -239,7 +245,7 @@ To run WedPlan locally:
 5. Start the Next.js frontend.
 6. Open the frontend at `http://localhost:3000`.
 
-For frontend installation and setup, see the [Client Repository](YOUR_CLIENT_GITHUB_REPOSITORY_URL).
+For frontend installation and setup, see the [Client Repository](https://github.com/mahzamincodes/PH-B14-A08-WedPlan-Client).
 
 ## Project Status
 
